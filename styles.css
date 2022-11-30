@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*---Nav bar*/
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50%;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+
+.navbar ul li {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    padding: 8px 25px;
+    color: #ff7480;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.navbar ul li a:hover {
+    background-color: antiquewhite;
+    color: black;
+    box-shadow: 0 0 10px #ff7480;
+}
+
+.back-video {
+    position: absolute;
+    /*top: -160%;
+    bottom: -50%;*/
+    top: -80%;
+    bottom: 5%;
+    width: 100%;
+    height: 200%;
+    z-index: -1;
+    background-size: cover;
+    object-fit: cover;
+}
+
+
+#home {
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#home h1 {
+    font-size: 50px;
+    color: #ff7480;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    transition: 0.5s;
+}
+
+#home h1:hover {
+    -webkit-text-stroke: 2px #ff7480;
+    color: transparent;
+
+}
+
+#home .main a {
+    text-decoration: none;
+    display: inline-block;
+    color: #ff7480;
+    font-size: 24px;
+    border: 2px solid #ff7480;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#home .main a:hover {
+    cursor: pointer;
+    background-color: antiquewhite;
+    color: black;
+    box-shadow: 0px 2px 15px 2px #ff7480;
+
+}
+
+
+#main-abt {
+    background-color: #785868;
+}
+
+
+
+#about img {
+
+    object-fit: cover;
+    background-size: cover;
+    border-radius: 50% 50% 50% 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border: 5px solid antiquewhite;
+
+}
+
+#about h1 {
+
+    padding-top: 50px;
+    color: #ff7480;
+    width: 100%;
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+#about p {
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4%;
+    margin-bottom: 5%;
+    width: 50%;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 180;
+    color: #ff7480;
+    border: 2px solid #ff7480;
+    padding: 50px 50px;
+    border-radius: 50px;
+    box-shadow: 0px 2px 15px 2px #ff7480;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+#about p:hover {
+    background-color: antiquewhite;
+}
+
+#footer {
+    padding: 30px;
+    text-align: center;
+    background-color: antiquewhite;
+
+}
+
+#main-exp {
+    background-color: #785868;
+    z-index: 0;
+    position: relative;
+
+}
+
+#experience {
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+
+#main-exp h1 {
+    padding-top: 5%;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: #ff7480;
+
+}
+
+
+#experience .container {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    border-radius: 50px;
+    box-shadow: 0px 2px 15px 2px #ff7480;
+    color: #ff7480;
+    background-color: antiquewhite;
+}
+
+#experience .container img {
+    position: absolute;
+    width: 100px;
+    right: -100px;
+    top: 250px;
+    z-index: 10;
+    box-shadow: 0px 2px 15px 2px #ff7480;
+    border-radius: 50px;
+    background-color: white;
+}
+
+#experience .container .jobdesc ul {
+    list-style: none;
+    margin: 0;
+    padding: 20px 30px;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+
+}
+
+.left-container {
+    left: 0;
+}
+
+.right-container {
+    left: 60%;
+
+}
+
+#experience .container .education p {
+
+    display: block;
+    margin: 0;
+    padding: 20px 30px;
+    position: relative;
+}
+
+#experience .container .education img {
+    position: absolute;
+    width: 50px;
+    right: 640px;
+    top: -50px;
+    z-index: 10;
+    border-radius: 20%;
+}
+
+#main-exp #experience::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background-color: black;
+    top: 5px;
+    left: 50%;
+    margin-left: 50px;
+    z-index: -1;
+    animation: moveline 3s linear forwards;
+}
+
+@keyframes moveline {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
+
+/* Services section */
+
+#main-service {
+    background-color: #785868;
+}
+
+#services {
+    font-family: 'Courier New', Courier, monospace;
+    color: #ff7480;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.row {
+    display: flex;
+}
+
+#services h1 {
+    margin-bottom: 5%;
+
+}
+
+.web {
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 180;
+    text-align: center;
+    word-spacing: -1px;
+    margin-top: 20%;
+
+}
+
+.heading {
+    font-size: 20px;
+    margin-top: 5%;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    border: 8px solid #ff7480;
+    margin: 25px;
+    align-items: center;
+    text-align: justify;
+    padding: 30px;
+    border-radius: 5%;
+    background: linear-gradient(to top, antiquewhite 50%, #785868 50%);
+    background-size: 100% 200%;
+    transition: all .8s;
+
+}
+
+.box:hover {
+    background-position: left bottom;
+    box-shadow: 0 0 20px white;
+}
+
+/* Making nav bar responsive */
+
+@media (max-width: 767px) {
+    .navbar ul {
+        height: 230px;
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    #home h1 {
+        font-size: 30px;
+        font-weight: 200;
+    }
+
+    #home a {
+        font-size: 30px;
+        font-weight: 200;
+    }
+
+    .back-video {
+        display: none;
+    }
+
+    #main-home {
+        background-color: #785868;
+
+    }
+
+    #experience .container {
+
+        position: relative;
+        width: 40%;
+        border-radius: 50px;
+    }
+
+    #experience img {
+        display: none;
+    }
+
+
+}
