@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+html {
+    background: url(images/backGround1.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50%;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+
+.navbar ul li {
+    font-family: 'Mali', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 30px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    padding: 8px 25px;
+    color: #006d77;
+    font-family: 'Mali', cursive;
+
+}
+
+.navbar ul li a:hover {
+    background-color: antiquewhite;
+    color: #006d77;
+    box-shadow: 0 0 10px #ff7480;
+}
+
+
+#saly {
+
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    padding: 5px;
+}
+
+.icons {
+    width: 501px;
+    height: 501px;
+    position: relative;
+    margin: 100px;
+    margin-top: -1%;
+    animation: floating 1s infinite ease-in-out;
+
+}
+
+.circle {
+    display: block;
+    position: absolute;
+    top: 51%;
+    left: 51%;
+    width: 100px;
+    height: 100px;
+    margin: -51px;
+}
+
+.deg-0 {
+    transform: translate(251px);
+
+}
+
+.deg-45 {
+    transform: translate(200px);
+    margin-top: 50%;
+
+}
+
+.deg-90 {
+    transform: translate(450px);
+    margin-top: -50%;
+
+}
+
+.deg-135 {
+    transform: translate(750px);
+}
+
+.deg-180 {
+    transform: translate(700px);
+    margin-top: 50%;
+}
+
+.deg-225 {
+    transform: translate(450px);
+    margin-top: 100%;
+}
+
+
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 15px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
+.box {
+    width: 20%;
+    font-family: 'Mali', cursive;
+    color: #006d77;
+    font-size: 25px;
+
+    border-radius: 20px;
+    padding: 20px;
+    line-height: 30px;
+    text-align: center;
+    margin-top: -22%;
+    margin-left: 5%;
+
+}
+
+.heading {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+
+.box-2 {
+    width: 20%;
+    font-family: 'Mali', cursive;
+    color: #006d77;
+    font-size: 25px;
+    border-radius: 20px;
+    padding: 20px;
+    line-height: 30px;
+    text-align: center;
+    margin-top: -25%;
+    margin-left: 75%;
+
+}
+
+.heading-2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}

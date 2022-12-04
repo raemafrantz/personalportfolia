@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+html {
+    background: url(images/backGround1.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    color: #006d77;
+    font-family: 'Mali', cursive;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50%;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+
+.navbar ul li {
+    font-family: 'Mali', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 30px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    padding: 8px 25px;
+    color: #006d77;
+    font-family: 'Mali', cursive;
+
+}
+
+.navbar ul li a:hover {
+    background-color: antiquewhite;
+    color: #006d77;
+    box-shadow: 0 0 10px #ff7480;
+}
+
+.card {
+    width: 500px;
+    margin-left: 20%;
+    margin-top: 5%;
+    height: 650px;
+    perspective: 1000px;
+}
+
+.inner-card {
+    width: 100%;
+    height: 150%;
+    transition: transform 2s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+}
+
+.inner-card.is-flipped {
+    transform: rotateY(180deg);
+}
+
+.card_face {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 25px;
+    background-color: cadetblue;
+    box-shadow: 0px 3px 18px 3px rgba(14, 14, 14, 0.8);
+}
+
+.front-face {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 30px;
+    color: #ff7480;
+}
+
+.back-face {
+    background-color: antiquewhite;
+    transform: rotateY(180deg);
+}
+
+.card-content {
+    width: 100%;
+    height: 100%;
+}
+
+.card-header {
+    position: relative;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.card_face h2,
+.card_face img {
+    margin-top: -50%;
+}
+
+.card-body {
+    padding: 20px;
+    margin-top: -4%;
+}
+
+.card-body p {
+    padding: 5px;
+    font-size: 20px;
+
+}
+
+
+.card-body ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+.card-2 {
+    width: 500px;
+    margin-left: 60%;
+    margin-top: -38%;
+    height: 650px;
+    perspective: 1000px;
+}
+
+.inner-card-2 {
+    width: 100%;
+    height: 100%;
+    transition: transform 2s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+}
+
+
+.inner-card-2.is-flipped {
+    transform: rotateY(180deg);
+}
+
+.card_face2 {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 25px;
+    background-color: cadetblue;
+    box-shadow: 0px 3px 18px 3px rgba(14, 14, 14, 0.8);
+}
+
+.front-face-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #ff7480;
+}
+
+.back-face-2 {
+    background-color: antiquewhite;
+    transform: rotateY(180deg);
+}
+
+.card-content-2 {
+    width: 100%;
+    height: 100%;
+}
+
+
+.card-content-2 p {
+    padding: 40px;
+    margin: 20px;
+    line-height: 30px;
+    margin-top: 20%;
+    font-size: 20px;
+
+}
+
+
+.card-content-2 ul {
+    list-style: none;
+}
