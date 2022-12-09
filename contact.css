@@ -13,6 +13,7 @@ html {
     -o-background-size: cover;
     background-size: cover;
     font-family: 'Mali', cursive;
+    color: #006d77;
 }
 
 
@@ -148,13 +149,17 @@ h3 {
 
 .contact-us h2 {
     margin-bottom: 10%;
-    margin-left: 15%;
+    margin-left: 25%;
+    font-weight: bold;
+    font-size: 40px;
 
 }
 
 .contact-us label {
     display: block;
     margin: 10px;
+    font-weight: bold;
+    font-size: 20px;
 
 }
 
@@ -187,6 +192,8 @@ textarea::-webkit-scrollbar-thumb {
 
 .send {
     text-align: center;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 input[type="submit"] {
@@ -194,7 +201,7 @@ input[type="submit"] {
     width: 90%;
     max-width: 200px;
     background: #ff7480;
-    font-size: 17px;
+    font-size: 20px;
     color: white;
     cursor: pointer;
     border-radius: 10px;
@@ -202,12 +209,21 @@ input[type="submit"] {
 
 .error {
     color: red;
+    font-weight: bold;
+    font-size: 15px;
+
 }
 
-.error-border {
-    border-bottom: 1px solid red;
-}
 
 #success {
     color: green;
+}
+
+#my-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 100000;
 }
