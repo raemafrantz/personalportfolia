@@ -4,10 +4,12 @@
 
 }
 
+/* background color for the page */
 html {
     background-color: #f8ad9d;
 }
 
+/* nav bar style */
 .navbar {
     display: flex;
     justify-content: center;
@@ -53,6 +55,7 @@ h3 {
 
 }
 
+/* project section style */
 .projects {
     padding: 5%;
     /* border: 2px solid red; */
@@ -77,6 +80,7 @@ h3 {
     width: 40%;
 }
 
+/* hover effect for each project */
 .projects a:hover {
     background: #fdfcdc;
 }
@@ -111,4 +115,23 @@ h3 {
     font-family: 'Mali', cursive;
     font-size: 20px;
 
+}
+
+/* page responsivness */
+@media (max-width: 1000px) {
+    .navbar ul {
+        height: 5%;
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .navbar ul li {
+
+        padding: 5px;
+    }
+
+    .footer {
+        display: none;
+    }
 }

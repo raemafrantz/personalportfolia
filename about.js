@@ -1,5 +1,5 @@
 
-
+// an observer class is used to have a fade in text effect when scrolled into view in the about page
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {

@@ -6,13 +6,14 @@
     box-sizing: border-box;
 }
 
+/* background color, font and color for the page */
 html {
     background-color: #f8ad9d;
     font-family: 'Mali', cursive;
     color: #006d77;
 }
 
-
+/* nav bar style */
 .navbar {
     display: flex;
     justify-content: center;
@@ -48,6 +49,7 @@ html {
     box-shadow: 0 0 10px black;
 }
 
+/* animated icons for contact info */
 .contact-info {
 
     width: 600px;
@@ -80,6 +82,7 @@ h3 {
     margin: auto;
 }
 
+/* hover effect for the lordicon icons */
 .contact-info .info-box .icons lord-icon:hover~h3,
 .contact-info .info-box .icons lord-icon:hover~h4 {
     color: #006d77;
@@ -122,6 +125,7 @@ h3 {
 
 }
 
+/* contact me form */
 .contact-us {
     width: 100%;
     height: 100%;
@@ -202,13 +206,12 @@ input[type="submit"] {
     border-radius: 10px;
 }
 
+/* add error and success class with vue */
 .error {
     color: red;
     font-weight: bold;
     font-size: 15px;
-
 }
-
 
 #success {
     color: green;
@@ -224,4 +227,34 @@ input[type="submit"] {
     font-family: 'Mali', cursive;
     font-size: 20px;
 
+}
+
+/* page responsivness */
+
+@media (max-width: 1000px) {
+    .navbar ul {
+        height: 5%;
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .navbar ul li {
+
+        padding: 5px;
+    }
+
+    .contact-info {
+
+        width: 200px;
+        margin-top: 25px;
+        margin-left: 30%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer {
+        display: none;
+    }
 }

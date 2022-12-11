@@ -1,18 +1,23 @@
 const { createApp } = Vue
 
+//this vue app is used for nav bar
 createApp({
     data() {
         return {
-            home: "mainpage.html",
+            home: "index.html",
             about: "about.html",
-            experience: "newexperience.html",
-            services: "newservices.html",
+            experience: "experience.html",
+            services: "services.html",
             contact: "contact.html",
-            projects: "projects.html"
+            projects: "projects.html",
+
         }
+
     }
+
 }).mount('#app')
 
+//this vue app is used in the footer
 createApp({
     data() {
         return {
@@ -21,6 +26,7 @@ createApp({
     }
 }).mount('#app2')
 
+//this vue app is used to validate the contact me form and set error or success message
 createApp({
     data() {
         return {
@@ -34,9 +40,7 @@ createApp({
         }
     },
     methods: {
-        processForm() {
-            console.log(this.name + this.email)
-        },
+
         validateName() {
             if (this.name.length < 1) {
                 this.nameError = true;
@@ -70,6 +74,7 @@ createApp({
 
     }
 }).mount('#app3');
+
 
 function testEmail(email) {
     let pattern = /\S+@\S+\.\S+/;

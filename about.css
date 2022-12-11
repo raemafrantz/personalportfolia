@@ -3,14 +3,14 @@
 * {
     padding: 0;
     margin: 0;
-
 }
 
+/* background color for the page */
 html {
-
     background-color: #f8ad9d;
 }
 
+/* animation for laptop in svg image */
 #laptop-bottom {
     animation: changeColor 2s infinite alternate;
 }
@@ -26,6 +26,7 @@ html {
 
 }
 
+/* floating animation for women coder svg image */
 #womencoder {
     animation: floating 1s infinite ease-in-out;
 
@@ -47,15 +48,15 @@ html {
 
 .svg-container {
     margin-left: -2%;
-
 }
 
+/* animated heart svg style */
 .vector1 {
     margin-left: 20%;
     margin-top: 5%;
 }
 
-
+/* nav bar style */
 .navbar {
     display: flex;
     justify-content: center;
@@ -91,6 +92,7 @@ html {
     box-shadow: 0 0 10px black;
 }
 
+/* about me content style */
 .about-me {
 
     display: block;
@@ -113,7 +115,7 @@ h2 {
 
 }
 
-
+/* content inside each about me box */
 .hidden {
     color: #006d77;
     font-family: 'Mali', cursive;
@@ -130,12 +132,14 @@ h2 {
     border-radius: 20px;
     box-shadow: 2px 4px 5px rgba(33, 27, 27, 0.3);
     line-height: 40px;
+    /* animation for box fading in and out of view while scrolling */
     opacity: 0;
     filter: blur(5px);
     transition: all 2s;
     transform: translateX(-200%);
 }
 
+/* show class is added through Javascript for animation */
 .show {
     opacity: 1;
     filter: blur(0);
@@ -143,14 +147,12 @@ h2 {
 
 }
 
-
-/* #first-para,
-#second-para {} */
-
+/* svg emoji for take off */
 #victory {
     margin-left: 30%;
 }
 
+/* svg emoji for clap */
 #clap {
     display: inline-block;
     margin-left: -5%;
@@ -168,10 +170,69 @@ h2 {
 
 }
 
-@media (prefers-reduced-motion) {
+
+/* page responsiveness */
+@media (max-width: 1000px) {
+    .navbar ul {
+        height: 5%;
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .navbar ul li {
+
+        padding: 5px;
+    }
+
+    #Vector43 {
+        display: none;
+    }
+
+    #womencoder {
+        display: none;
+    }
+
+    .about-me {
+        left: 25%;
+        top: 30%;
+    }
+
+    h2 {
+        font-size: 20px;
+        padding: 10px;
+        margin: 20px;
+    }
+
+    #clap {
+        display: none;
+    }
 
     .hidden {
-        transform: none;
+        display: flex;
+
+        width: 400px;
+        height: 300px;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 10px;
         transition: none;
+        transform: none;
+        line-height: 20px;
+    }
+
+    .show {
+        transition: none;
+        transform: none;
+    }
+
+    #victory {
+        display: none;
+    }
+
+    .footer {
+
+        display: none;
+
     }
 }

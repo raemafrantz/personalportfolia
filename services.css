@@ -6,10 +6,12 @@
 
 }
 
+/* background color for the page */
 html {
     background-color: #f8ad9d;
 }
 
+/* nav bar style */
 .navbar {
     display: flex;
     justify-content: center;
@@ -45,7 +47,7 @@ html {
     box-shadow: 0 0 10px black;
 }
 
-
+/* svg image in the center */
 #saly {
 
     position: absolute;
@@ -54,6 +56,7 @@ html {
     padding: 5px;
 }
 
+/* style for html css js php java python icons */
 .icons {
     width: 501px;
     height: 501px;
@@ -64,6 +67,7 @@ html {
 
 }
 
+/* style icons into a circle */
 .circle {
     display: block;
     position: absolute;
@@ -76,19 +80,16 @@ html {
 
 .deg-0 {
     transform: translate(251px);
-
 }
 
 .deg-45 {
     transform: translate(200px);
     margin-top: 50%;
-
 }
 
 .deg-90 {
     transform: translate(450px);
     margin-top: -50%;
-
 }
 
 .deg-135 {
@@ -105,8 +106,7 @@ html {
     margin-top: 100%;
 }
 
-
-
+/* animate the icons to float */
 @keyframes floating {
     0% {
         transform: translate(0, 0px);
@@ -121,6 +121,7 @@ html {
     }
 }
 
+/* web development  content box */
 .box {
     width: 20%;
     font-family: 'Mali', cursive;
@@ -141,6 +142,7 @@ html {
     padding: 20px;
 }
 
+/* animate the web dev box to fade in */
 .box {
     animation: fadeOut 5s;
 }
@@ -155,6 +157,7 @@ html {
     }
 }
 
+/* software development  content box */
 .box-2 {
     width: 20%;
     font-family: 'Mali', cursive;
@@ -176,9 +179,10 @@ html {
 }
 
 .box-2 {
-    animation: fadeOut 15s;
+    animation: fadeOut 12s;
 }
 
+/* animate the software dev box to fade in */
 @keyframes fadeOut {
     0% {
         opacity: 0;
@@ -199,4 +203,50 @@ html {
     font-family: 'Mali', cursive;
     font-size: 20px;
 
+}
+
+/* page responsiveness */
+@media (max-width: 1000px) {
+    .navbar ul {
+        height: 5%;
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .navbar ul li {
+
+        padding: 5px;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .middle-pic {
+        display: none;
+    }
+
+    .box {
+        display: block;
+        margin: 40px;
+        width: 80%;
+        margin-top: 10%;
+        animation: none;
+    }
+
+    .box-2 {
+        display: block;
+        margin: 40px;
+        padding: 20px;
+        width: 80%;
+        height: 50%;
+        animation: none;
+    }
+
+    .footer {
+
+        display: none;
+
+    }
 }
