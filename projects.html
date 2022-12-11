@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolia-Reama Frantz</title>
+    <link rel="stylesheet" href="projects.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <nav id="app" class='navbar'>
+            <ul>
+                <li><a :href="home">Home</a></li>
+                <li><a :href="about">About</a></li>
+                <li><a :href="experience">Experience</a></li>
+                <li><a :href="services">Services</a></li>
+                <li><a :href="projects">Projects</a></li>
+                <li><a :href="contact">Contact</a></li>
+
+            </ul>
+        </nav>
+        <section>
+            <h3>Check it out 👇</h3>
+
+            <ul class="projects">
+                <li><a href="https://polite-babka-98f9e5.netlify.app" target="_blank">Calculator</a></li>
+                <li><a href="https://dancing-cendol-3ee888.netlify.app" target="_blank">Digital Clock</a></li>
+                <li><a href="https://classy-nougat-1cf338.netlify.app" target="_blank">To-do</a></li>
+            </ul>
+
+        </section>
+        <footer id="app2" class="footer">
+            <p>{{footer}}</p>
+        </footer>
+    </main>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="headfoot.js"></script>
+</body>
+
+</html>

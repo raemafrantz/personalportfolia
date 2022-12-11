@@ -7,24 +7,18 @@
 }
 
 html {
-    background: url(images/backGround1.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background-color: #f8ad9d;
     font-family: 'Mali', cursive;
     color: #006d77;
 }
 
 
 .navbar {
-
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     top: 50%;
-
 }
 
 .navbar ul {
@@ -34,29 +28,30 @@ html {
 }
 
 .navbar ul li {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Mali', cursive;
     font-size: 20px;
     font-weight: bold;
+    padding: 30px;
 }
 
 .navbar ul li a {
     text-decoration: none;
     padding: 8px 25px;
-    color: #ff7480;
-    font-family: 'Courier New', Courier, monospace;
+    color: #006d77;
+    font-family: 'Mali', cursive;
 
 }
 
 .navbar ul li a:hover {
-    background-color: antiquewhite;
-    color: black;
-    box-shadow: 0 0 10px #ff7480;
+    background-color: #fdfcdc;
+    color: #ff7480;
+    box-shadow: 0 0 10px black;
 }
 
 .contact-info {
 
     width: 600px;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-left: 520px;
     display: flex;
     justify-content: space-between;
@@ -87,7 +82,8 @@ h3 {
 
 .contact-info .info-box .icons lord-icon:hover~h3,
 .contact-info .info-box .icons lord-icon:hover~h4 {
-    color: black;
+    color: #006d77;
+    font-weight: bold;
 
 }
 
@@ -134,13 +130,11 @@ h3 {
     justify-content: center;
     align-items: center;
 
-
-
 }
 
 .contact-us form {
     max-width: 550px;
-    background: antiquewhite;
+    background: #84a59d;
     margin: 5vh auto 0 auto;
     padding: 40px;
     border-radius: 10px;
@@ -175,6 +169,7 @@ textarea {
     border-bottom: 2px solid #d3d3d3;
     margin-bottom: 10px;
     border-radius: 10px;
+    color: black;
 }
 
 input[type="text"]:focus,
@@ -200,9 +195,9 @@ input[type="submit"] {
     margin-top: 30px;
     width: 90%;
     max-width: 200px;
-    background: #ff7480;
+    background: #f8ad9d;
     font-size: 20px;
-    color: white;
+    color: #006d77;
     cursor: pointer;
     border-radius: 10px;
 }
@@ -219,11 +214,14 @@ input[type="submit"] {
     color: green;
 }
 
-#my-canvas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: 100000;
+
+.footer {
+
+    margin-top: 5%;
+    margin-bottom: 3%;
+    text-align: center;
+    color: #006d77;
+    font-family: 'Mali', cursive;
+    font-size: 20px;
+
 }

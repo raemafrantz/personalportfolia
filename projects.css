@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+html {
+    background-color: #f8ad9d;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50%;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+
+.navbar ul li {
+    font-family: 'Mali', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 30px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    padding: 8px 25px;
+    color: #006d77;
+    font-family: 'Mali', cursive;
+
+}
+
+.navbar ul li a:hover {
+    background-color: #fdfcdc;
+    color: #ff7480;
+    box-shadow: 0 0 10px black;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-left: 40%;
+    color: #006d77;
+    font-family: 'Mali', cursive;
+    margin-top: 5%;
+
+}
+
+.projects {
+    padding: 5%;
+    /* border: 2px solid red; */
+
+    list-style: none;
+    font-size: 25px;
+    margin-left: 30%;
+}
+
+
+
+.projects a {
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    margin: .5em 0;
+    background: #9a8c98;
+    color: #006d77;
+    text-decoration: none;
+    border-radius: .3em;
+    transition: all .3s ease-out;
+    width: 40%;
+}
+
+.projects a:hover {
+    background: #fdfcdc;
+}
+
+.projects a:hover:before {
+    transform: rotate(360deg);
+}
+
+.projects a:before {
+    content: "⭐";
+    position: absolute;
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: #84a59d;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid white;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    transition: all .3s ease-out;
+}
+
+.footer {
+
+    margin-top: 10%;
+    margin-bottom: 3%;
+    text-align: center;
+    color: #006d77;
+    font-family: 'Mali', cursive;
+    font-size: 20px;
+
+}

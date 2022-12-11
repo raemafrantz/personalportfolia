@@ -7,11 +7,8 @@
 }
 
 html {
-    background: url(images/backGround1.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+
+    background-color: #f8ad9d;
 }
 
 #laptop-bottom {
@@ -89,9 +86,9 @@ html {
 }
 
 .navbar ul li a:hover {
-    background-color: antiquewhite;
-    color: #006d77;
-    box-shadow: 0 0 10px #ff7480;
+    background-color: #fdfcdc;
+    color: #ff7480;
+    box-shadow: 0 0 10px black;
 }
 
 .about-me {
@@ -102,7 +99,6 @@ html {
     left: 40%;
     top: 20%;
 
-
 }
 
 h2 {
@@ -111,7 +107,7 @@ h2 {
     font-size: 50px;
     justify-content: center;
     margin-bottom: 5%;
-    margin-left: 30%;
+    margin-left: 25%;
     color: #006d77;
     font-family: 'Mali', cursive;
 
@@ -129,31 +125,27 @@ h2 {
     justify-content: center;
     width: 500px;
     height: 400px;
-    margin: 100px;
+    margin: 58px;
     padding: 50px;
     border-radius: 20px;
     box-shadow: 2px 4px 5px rgba(33, 27, 27, 0.3);
-    opacity: 0;
-    filter: blur(8px);
-    transition: all 2s;
-    transform: translateX(-150%);
     line-height: 40px;
-
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 2s;
+    transform: translateX(-200%);
 }
 
 .show {
-    opacity: 2;
+    opacity: 1;
     filter: blur(0);
-
     transform: translateX(0);
 
 }
 
-#first-para,
-#second-para {
-    margin-bottom: 10%;
 
-}
+/* #first-para,
+#second-para {} */
 
 #victory {
     margin-left: 30%;
@@ -163,4 +155,23 @@ h2 {
     display: inline-block;
     margin-left: -5%;
     margin-bottom: -5%;
+}
+
+.footer {
+
+    margin-top: 60%;
+    margin-bottom: 3%;
+    text-align: center;
+    color: #006d77;
+    font-family: 'Mali', cursive;
+    font-size: 20px;
+
+}
+
+@media (prefers-reduced-motion) {
+
+    .hidden {
+        transform: none;
+        transition: none;
+    }
 }

@@ -7,11 +7,7 @@
 }
 
 html {
-    background: url(images/backGround1.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background-color: #f8ad9d;
 }
 
 .navbar {
@@ -44,9 +40,9 @@ html {
 }
 
 .navbar ul li a:hover {
-    background-color: antiquewhite;
-    color: #006d77;
-    box-shadow: 0 0 10px #ff7480;
+    background-color: #fdfcdc;
+    color: #ff7480;
+    box-shadow: 0 0 10px black;
 }
 
 
@@ -130,8 +126,6 @@ html {
     font-family: 'Mali', cursive;
     color: #006d77;
     font-size: 25px;
-
-    border-radius: 20px;
     padding: 20px;
     line-height: 30px;
     text-align: center;
@@ -147,16 +141,29 @@ html {
     padding: 20px;
 }
 
+.box {
+    animation: fadeOut 5s;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 .box-2 {
     width: 20%;
     font-family: 'Mali', cursive;
     color: #006d77;
     font-size: 25px;
-    border-radius: 20px;
     padding: 20px;
     line-height: 30px;
     text-align: center;
-    margin-top: -25%;
+    margin-top: -22%;
     margin-left: 75%;
 
 }
@@ -166,4 +173,30 @@ html {
     font-weight: bold;
     text-align: center;
     padding: 20px;
+}
+
+.box-2 {
+    animation: fadeOut 15s;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.footer {
+
+    margin-top: 25%;
+    margin-bottom: 3%;
+    text-align: center;
+    color: #006d77;
+    font-family: 'Mali', cursive;
+    font-size: 20px;
+
 }

@@ -3,15 +3,10 @@
 * {
     padding: 0;
     margin: 0;
-
 }
 
 html {
-    background: url(images/backGround1.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background-color: #f8ad9d;
 }
 
 body {
@@ -50,10 +45,11 @@ body {
 }
 
 .navbar ul li a:hover {
-    background-color: antiquewhite;
-    color: #006d77;
-    box-shadow: 0 0 10px #ff7480;
+    background-color: #fdfcdc;
+    color: #ff7480;
+    box-shadow: 0 0 10px black;
 }
+
 
 .card {
     width: 500px;
@@ -85,7 +81,7 @@ body {
     backface-visibility: hidden;
     overflow: hidden;
     border-radius: 25px;
-    background-color: cadetblue;
+    background-color: #84a59d;
     box-shadow: 0px 3px 18px 3px rgba(14, 14, 14, 0.8);
 }
 
@@ -95,7 +91,7 @@ body {
     justify-content: center;
 
     font-size: 30px;
-    color: #ff7480;
+    color: #006d77;
 }
 
 .back-face {
@@ -167,7 +163,7 @@ body {
     backface-visibility: hidden;
     overflow: hidden;
     border-radius: 25px;
-    background-color: cadetblue;
+    background-color: #84a59d;
     box-shadow: 0px 3px 18px 3px rgba(14, 14, 14, 0.8);
 }
 
@@ -176,7 +172,7 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 30px;
-    color: #ff7480;
+    color: #006d77;
 }
 
 .back-face-2 {
@@ -202,4 +198,15 @@ body {
 
 .card-content-2 ul {
     list-style: none;
+}
+
+.footer {
+
+    margin-top: 25%;
+    margin-bottom: 3%;
+    text-align: center;
+    color: #006d77;
+    font-family: 'Mali', cursive;
+    font-size: 20px;
+
 }

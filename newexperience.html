@@ -14,15 +14,17 @@
 
 <body>
     <main>
-        <nav class='navbar'>
+        <nav id="app" class='navbar'>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="newexperience.html">Experience</a></li>
-                <li><a href="newservices.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a :href="home">Home</a></li>
+                <li><a :href="about">About</a></li>
+                <li><a :href="experience">Experience</a></li>
+                <li><a :href="services">Services</a></li>
+                <li><a :href="projects">Projects</a></li>
+                <li><a :href="contact">Contact</a></li>
 
             </ul>
+
         </nav>
         <section class="card">
             <section class="inner-card">
@@ -116,8 +118,13 @@
                 </article>
             </section>
         </section>
+        <footer id="app2" class="footer">
+            <p>{{footer}}</p>
+        </footer>
     </main>
     <script src="experience.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="headfoot.js"></script>
 </body>
 
 </html>

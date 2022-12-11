@@ -16,15 +16,14 @@
 
 <body>
     <main>
-
-
-        <nav class='navbar'>
+        <nav id="app" class='navbar'>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="newexperience.html">Experience</a></li>
-                <li><a href="newservices.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a :href="home">Home</a></li>
+                <li><a :href="about">About</a></li>
+                <li><a :href="experience">Experience</a></li>
+                <li><a :href="services">Services</a></li>
+                <li><a :href="projects">Projects</a></li>
+                <li><a :href="contact">Contact</a></li>
 
             </ul>
 
@@ -34,7 +33,7 @@
             <article class="info-box">
                 <article class="icons">
                     <lord-icon src="https://cdn.lordicon.com/oaflahpk.json" trigger="loop" delay="1000"
-                        style="width:150px;height:150px">
+                        style="width:100px;height:100px">
                     </lord-icon>
                     <h4>Address</h4>
                     <h3>New York City</h3>
@@ -43,7 +42,7 @@
             <article class="info-box">
                 <article class="icons">
                     <lord-icon src="https://cdn.lordicon.com/bjnaomnr.json" trigger="loop" delay="1000"
-                        style="width:150px;height:150px">
+                        style="width:100px;height:100px">
                     </lord-icon>
                     <h4>Mobile</h4>
                     <h3>123-456-789</h3>
@@ -52,7 +51,7 @@
             <article class="info-box">
                 <article class="icons">
                     <lord-icon src="https://cdn.lordicon.com/lfqstkwj.json" trigger="loop" delay="2000"
-                        style="width:150px;height:150px">
+                        style="width:100px;height:100px">
                     </lord-icon>
                     <h4>Email</h4>
                     <h3>test@gmail.com</h3>
@@ -60,31 +59,36 @@
             </article>
         </article>
 
-        <article class="contact-us">
-            <form onsubmit="event.preventDefault(); validateForm()">
+        <article id="app3" class="contact-us">
+            <form @submit.prevent="submitSuccess">
                 <h2>Contact Me</h2>
                 <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Your name">
-                <small class="error"></small>
+                <input type="text" id="name" placeholder="Your name" v-model="name" @blur="validateName">
+                <p class="error" v-if="nameError">Name cannot be blank </p>
                 <label for="Email">Email</label>
-                <input type="text" id="email" placeholder="Your email">
-                <small class="error"></small>
+                <input type="text" id="email" placeholder="Your email" v-model="email" @blur="validateEmail">
+                <p class="error" v-if="emailError">Email is not valid </p>
                 <label for="message">Message</label>
-                <textarea id="message" placeholder="Your message" rows="6"></textarea>
-                <small class="error"></small>
+                <textarea id="message" placeholder="Your message" rows="6" v-model="message"
+                    @blur="validateMessage"></textarea>
+                <p class="error" v-if="messageError">Message cannot be blank </p>
                 <div class="send">
-                    <input type="submit" value="Send">
-                    <p id="success"></p>
+                    <input type="submit" value="Send🎯">
+                    <p id="success" v-if="success">Message send successfully</p>
 
                 </div>
 
             </form>
 
         </article>
+        <footer id="app2" class="footer">
+            <p>{{footer}}</p>
+        </footer>
     </main>
     <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
     <script src="contact.js"></script>
-    <script src="index.min.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="headfoot.js" type="module"></script>
 
 </body>
 
